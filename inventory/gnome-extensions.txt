@@ -1,0 +1,14 @@
+clipboard-indicator@tudmotu.com
+blur-my-shell@aunetx
+burn-my-windows@schneegans.github.com
+CoverflowAltTab@palatis.blogspot.com
+gsconnect@andyholmes.github.io
+Vitals@CoreCoding.com
+dynamic-music-pill@andbal
+search-light@icedman.github.com
+openbar@neuromorph
+dash-to-dock@micxgx.gmail.com
+ding@rastersoft.com
+tiling-assistant@ubuntu.com
+ubuntu-appindicators@ubuntu.com
+ubuntu-dock@ubuntu.com
