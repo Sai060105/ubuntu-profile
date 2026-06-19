@@ -1,0 +1,8 @@
+# Ignore system hidden files
+.DS_Store
+*~
+*.swp
+
+# Ignore any temporary snapshot backups you might make later
+snapshots/*
+!snapshots/.gitkeep
