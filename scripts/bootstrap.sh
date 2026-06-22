@@ -1,8 +1,6 @@
 #!/bin/bash
 echo "Starting Full Workstation Restoration!"
 
-set -e
-
 ./scripts/setup-repositories.sh
 ./scripts/install-packages.sh
 ./scripts/restore-assets.sh
