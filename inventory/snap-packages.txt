@@ -1,4 +1,5 @@
 bare
+bibata-all-cursor
 core18
 core20
 core22
