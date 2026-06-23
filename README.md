@@ -101,7 +101,7 @@ sudo apt install -y git curl
 Using SSH:
 
 ```bash
-git clone git@github.com:Sai060105/ubuntu-profile.git
+git clone https://github.com/Sai060105/ubuntu-profile.git
 cd ubuntu-profile
 ```
 
