@@ -1,0 +1,9 @@
+[custom0]
+binding='<Alt>d'
+command='/home/sai/.local/bin/matrix-mode'
+name='tmatrix'
+
+[custom1]
+binding='<Control>q'
+command='kitty'
+name='kitty'
