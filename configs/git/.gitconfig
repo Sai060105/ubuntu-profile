@@ -6,3 +6,15 @@
 [user]
 	name = Perla Sai
 	email = perlasai060105@gmail.com
+[core]
+    pager = cat
+[pager]
+    branch = false
+    tag = false
+    log = true
+    show = true
+    diff = true
+    blame = true
+    reflog = true
+    grep = true
+    stash = false
