@@ -11,4 +11,14 @@ while read -r pkg; do
 cargo install "$pkg"
 done < inventory/cargo.txt
 
+if ! command -v pokemon-colorscripts >/dev/null 2>&1; then
+    echo "[INFO] Installing pokemon-colorscripts from acxz/pokescript..."
+    tmp_dir="$(mktemp -d)"
+    git clone https://github.com/acxz/pokescript.git "$tmp_dir/pokescript"
+    (cd "$tmp_dir/pokescript" && sudo ./install.sh)
+    rm -rf "$tmp_dir"
+else
+    echo "[OK] pokemon-colorscripts already installed."
+fi
+
 echo "Packages installed successfully!"

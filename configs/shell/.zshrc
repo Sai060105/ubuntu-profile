@@ -41,13 +41,27 @@ export NVM_DIR="$HOME/.nvm"
 # --------------------------------------------------
 
 pokemonfetch() {
-    pokemon-colorscripts --no-title -s -r > /tmp/pokemon_logo
+    if ! command -v fastfetch >/dev/null 2>&1; then
+        return
+    fi
 
-    fastfetch \
-        --pipe false \
-        --config ~/.config/fastfetch/config.jsonc \
-        --logo-type file \
-        --logo /tmp/pokemon_logo
+    local pokemon_logo
+    pokemon_logo="$(mktemp)"
+
+    if command -v pokemon-colorscripts >/dev/null 2>&1; then
+        pokemon-colorscripts --no-title -s -r > "$pokemon_logo"
+        fastfetch \
+            --pipe false \
+            --config ~/.config/fastfetch/config.jsonc \
+            --logo-type file \
+            --logo "$pokemon_logo"
+    else
+        fastfetch \
+            --pipe false \
+            --config ~/.config/fastfetch/config.jsonc
+    fi
+
+    rm -f "$pokemon_logo"
 }
 
 if [[ $- == *i* ]]; then

@@ -1,10 +1,4 @@
 {
-  "logo": {
-    "type": "kitty",
-    "source": "/home/sai/Pictures/terminal-art/pixel-small.png",
-    "width": 7
-  },
-
   "modules": [
     "title",
     "os",
