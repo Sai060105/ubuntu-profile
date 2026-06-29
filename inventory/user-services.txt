@@ -7,6 +7,7 @@ obex.service                                                     enabled enabled
 org.freedesktop.IBus.session.GNOME.service                       enabled enabled
 pipewire-pulse.service                                           enabled enabled
 pipewire.service                                                 enabled enabled
+pulseaudio.service                                               enabled enabled
 session-migration.service                                        enabled enabled
 snap.snapd-desktop-integration.snapd-desktop-integration.service enabled enabled
 tracker-miner-fs-3.service                                       enabled enabled
@@ -25,8 +26,9 @@ keyboxd.socket                                                   enabled enabled
 pipewire-pulse.socket                                            enabled enabled
 pipewire.socket                                                  enabled enabled
 pk-debconf-helper.socket                                         enabled enabled
+pulseaudio.socket                                                enabled enabled
 speech-dispatcher.socket                                         enabled enabled
 launchpadlib-cache-clean.timer                                   enabled enabled
 snap.firmware-updater.firmware-notifier.timer                    enabled enabled
 
-29 unit files listed.
+31 unit files listed.

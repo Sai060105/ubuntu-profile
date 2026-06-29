@@ -333,7 +333,6 @@ ubuntu-desktop-minimal
 ubuntu-docs
 ubuntu-drivers-common
 ubuntu-keyring
-ubuntu-minimal
 ubuntu-pro-client
 ubuntu-release-upgrader-gtk
 ubuntu-report

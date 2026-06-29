@@ -1,5 +1,6 @@
 UNIT FILE                                      STATE   PRESET
 snap-bare-5.mount                              enabled enabled
+snap-bibata\x2dall\x2dcursor-1.mount           enabled enabled
 snap-core18-2999.mount                         enabled enabled
 snap-core20-2866.mount                         enabled enabled
 snap-core22-2292.mount                         enabled enabled
@@ -15,6 +16,7 @@ snap-gnome\x2d42\x2d2204-247.mount             enabled enabled
 snap-gnome\x2d46\x2d2404-153.mount             enabled enabled
 snap-gtk\x2dcommon\x2dthemes-1535.mount        enabled enabled
 snap-mesa\x2d2404-1165.mount                   enabled enabled
+snap-mesa\x2d2404-1781.mount                   enabled enabled
 snap-snap\x2dstore-1270.mount                  enabled enabled
 snap-snap\x2dstore-1367.mount                  enabled enabled
 snap-snapd-25935.mount                         enabled enabled
@@ -60,6 +62,7 @@ NetworkManager.service                         enabled enabled
 openvpn.service                                enabled enabled
 power-profiles-daemon.service                  enabled enabled
 rsyslog.service                                enabled enabled
+seatd.service                                  enabled enabled
 secureboot-db.service                          enabled enabled
 setvtrgb.service                               enabled enabled
 snapd.apparmor.service                         enabled enabled
@@ -89,6 +92,7 @@ avahi-daemon.socket                            enabled enabled
 cloud-init-hotplugd.socket                     enabled enabled
 cups.socket                                    enabled enabled
 snapd.socket                                   enabled enabled
+ssh.socket                                     enabled enabled
 sssd-autofs.socket                             enabled enabled
 sssd-nss.socket                                enabled enabled
 sssd-pac.socket                                enabled enabled
@@ -117,4 +121,4 @@ ua-timer.timer                                 enabled enabled
 update-notifier-download.timer                 enabled enabled
 update-notifier-motd.timer                     enabled enabled
 
-117 unit files listed.
+121 unit files listed.
