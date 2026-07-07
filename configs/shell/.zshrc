@@ -49,12 +49,12 @@ pokemonfetch() {
     pokemon_logo="$(mktemp)"
 
     if command -v pokemon-colorscripts >/dev/null 2>&1; then
-        pokemon-colorscripts --no-title -s -r > "$pokemon_logo"
-        fastfetch \
-            --pipe false \
-            --config ~/.config/fastfetch/config.jsonc \
-            --logo-type file \
-            --logo "$pokemon_logo"
+	pokemon-colorscripts -r | tail -n +3 > "$pokemon_logo"
+	fastfetch \
+	    --pipe false \
+	    --config ~/.config/fastfetch/config.jsonc \
+	    --logo-type file \
+	    --logo "$pokemon_logo"
     else
         fastfetch \
             --pipe false \
@@ -147,3 +147,4 @@ alias kgd='kubectl get deployments'
 alias kdesc='kubectl describe'
 alias klogs='kubectl logs -f'
 alias bat=batcat
+export PATH="$HOME/.cargo/bin:$PATH"

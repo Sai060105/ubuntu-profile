@@ -4,31 +4,25 @@ snap-bibata\x2dall\x2dcursor-1.mount           enabled enabled
 snap-core18-2999.mount                         enabled enabled
 snap-core20-2866.mount                         enabled enabled
 snap-core22-2292.mount                         enabled enabled
-snap-core22-2411.mount                         enabled enabled
-snap-core24-1587.mount                         enabled enabled
 snap-core24-1643.mount                         enabled enabled
-snap-firefox-8387.mount                        enabled enabled
-snap-firefox-8417.mount                        enabled enabled
+snap-firefox-7766.mount                        enabled enabled
 snap-firmware\x2dupdater-210.mount             enabled enabled
-snap-firmware\x2dupdater-226.mount             enabled enabled
 snap-gnome\x2d3\x2d28\x2d1804-198.mount        enabled enabled
 snap-gnome\x2d42\x2d2204-247.mount             enabled enabled
-snap-gnome\x2d46\x2d2404-153.mount             enabled enabled
+snap-gnome\x2d46\x2d2404-164.mount             enabled enabled
 snap-gtk\x2dcommon\x2dthemes-1535.mount        enabled enabled
 snap-mesa\x2d2404-1165.mount                   enabled enabled
-snap-mesa\x2d2404-1781.mount                   enabled enabled
 snap-snap\x2dstore-1270.mount                  enabled enabled
 snap-snap\x2dstore-1367.mount                  enabled enabled
 snap-snapd-25935.mount                         enabled enabled
-snap-snapd-26865.mount                         enabled enabled
-snap-snapd\x2ddesktop\x2dintegration-361.mount enabled enabled
-snap-snapd\x2ddesktop\x2dintegration-387.mount enabled enabled
-snap-teams\x2dfor\x2dlinux-1937.mount          enabled enabled
+snap-snapd\x2ddesktop\x2dintegration-343.mount enabled enabled
 snap-teams\x2dfor\x2dlinux-2015.mount          enabled enabled
+snap-thunderbird-1170.mount                    enabled enabled
 snap-whatsapp\x2ddesktop\x2dlinux-1.mount      enabled enabled
 apport-autoreport.path                         enabled enabled
 cups.path                                      enabled enabled
 tpm-udev.path                                  enabled enabled
+whoopsie.path                                  enabled enabled
 accounts-daemon.service                        enabled enabled
 anacron.service                                enabled enabled
 apparmor.service                               enabled enabled
@@ -121,4 +115,4 @@ ua-timer.timer                                 enabled enabled
 update-notifier-download.timer                 enabled enabled
 update-notifier-motd.timer                     enabled enabled
 
-121 unit files listed.
+115 unit files listed.
