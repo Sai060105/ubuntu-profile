@@ -130,6 +130,7 @@ Script:
 Actions:
 
 * Adds the fastfetch PPA
+* Restores the Brave and VS Code APT sources
 * Refreshes the package index after repository changes
 
 ---
@@ -430,8 +431,9 @@ Capture configured APT source entries for reference:
 grep -RhE '^(deb |URIs:)' /etc/apt/sources.list /etc/apt/sources.list.d/ 2>/dev/null > inventory/repositories.txt
 ```
 
-`repos.txt` and `repositories.txt` are informational snapshots; the current
-`setup-repositories.sh` does not restore entries from either file.
+`repos.txt` and `repositories.txt` are snapshots of the configured sources.
+`setup-repositories.sh` restores the Brave and VS Code sources directly and
+still adds the fastfetch PPA.
 
 Environment variables can contain tokens or other secrets. Inspect the output
 before saving or committing it:
