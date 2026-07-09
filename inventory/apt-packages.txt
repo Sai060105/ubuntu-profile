@@ -19,6 +19,7 @@ blueman
 bluez
 bluez-cups
 boxes
+brave-browser
 brightnessctl
 brltty
 bsdutils
@@ -33,6 +34,7 @@ cliphist
 cloud-init
 cmake
 cmake-extras
+code
 console-setup
 cppcheck
 cups
@@ -241,6 +243,7 @@ lsd
 m17n-db
 mawk
 memtest86+
+mongodb-compass
 mount
 mousepad
 mousetweaks
