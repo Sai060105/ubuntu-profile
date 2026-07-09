@@ -77,6 +77,17 @@ clear() {
     pokemonfetch
 }
 
+clearcache() {
+    echo "=== Before ==="
+    free -h
+
+    sudo sync
+    echo 3 | sudo tee /proc/sys/vm/drop_caches >/dev/null
+
+    echo
+    echo "=== After ==="
+    free -h
+}
 # --------------------------------------------------
 # EZA (RECOMMENDED)
 # --------------------------------------------------
@@ -99,6 +110,7 @@ alias update='sudo apt update && sudo apt upgrade -y'
 alias remove='sudo apt autoremove -y'
 alias i='sudo apt install'
 
+alias cc='clearcache'
 # --------------------------------------------------
 # NAVIGATION
 # --------------------------------------------------
@@ -118,6 +130,11 @@ alias gp='git push'
 alias gpl='git pull'
 alias gco='git checkout'
 alias gb='git branch'
+alias gsh='git stash'
+
+# && git push --force-with-lease
+
+alias grs='git reset --soft HEAD~1'
 
 alias gl="git log --graph --topo-order --pretty='%w(100,2,6)%C(yellow)%h%C(reset) %C(blue)%ad%C(reset) %C(green)%s%C(reset) %C(magenta)%an%C(reset)%C(cyan)%d%C(reset)' --date=format:'%Y-%m-%d %H:%M:%S'"
 
